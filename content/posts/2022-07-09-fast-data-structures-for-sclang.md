@@ -2,7 +2,7 @@
 title: "Fast Data Structures for SCLang"
 date: "2022-07-09"
 author: "Luke Nihlen"
-description: "A discussion of the implementation of key data structures in the SuperCollider programming language"
+description: "A discussion of the implementation of key data structures in the SuperCollider programming language."
 ---
 
 I've long held that any programming language worth its salt should provide two fundamental data structures:
@@ -226,6 +226,6 @@ structures that currently use `IdentityDictionary` to that. I want to think I'll
 data that suggests a data structure redesign would be the most impactful optimizations I could make on Hadron, but I
 might not be *that* disciplined.
 
-Getting to correctness itself seems like a ton of work, so any of this optimization work seems like it will be some time
-from now. My intuition suggests that dictionary optimizations would be impactful, particularly considering that the
-`Event` class is central to many SuperCollider pattern-based workflows. Time will tell.
+Getting to correctness seems like a ton of work, making this optimization work feel even further away. My intuition
+suggests that dictionary optimizations would be impactful, particularly considering that the `Event` class, central to
+many SuperCollider pattern-based workflows, derives from `IdentityDictionary`. Time will tell.
